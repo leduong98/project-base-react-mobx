@@ -1,11 +1,16 @@
 import './App.css';
+import Header from "./commons/shop/header";
+import Footer from "./commons/shop/footer";
+import { Router, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="app">
-      <header className="app-header">
-        Project Base
-      </header>
+    <div className='app'>
+      <Header/>
+        <Switch>
+          {/*<Router path="/" component={}/>*/}
+        </Switch>
+      <Footer/>
     </div>
   );
 }
